@@ -3,7 +3,7 @@ const { notes } = require('../db/db.json');
 const createNewNote = require('../lib/notes.js');
 
 router.get('/notes', (req, res) => {
-    res.json(notes);
+    res.json(notes.notes);
 });
 
 router.post('/notes', (req, res) => {
